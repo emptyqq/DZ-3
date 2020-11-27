@@ -1,0 +1,31 @@
+#1
+repeat = True
+list = [1, 2, 3]
+while repeat:
+    print(f"Сейчас в списке {list}")
+    for i in range(len(list)):
+        list[i] = list[i] * 2
+    print(f"Стало {list}")
+    repeat = False
+#2
+list = [1, 2, 3]
+GG = 0
+print(f"Находим сумму квадратов данных чисел {list}")
+for i in range(len(list)):
+    GG = list[i] * list[i] + GG
+print(f"Ответ: {GG}")
+#3
+    zxc = 'Hello world'
+    if ' ' in zxc:
+        zxc = zxc.upper()
+        print(zxc)
+    else:
+        zxc = zxc.lower()
+        print(zxc)
+#4
+from datetime import datetime
+year1 = datetime.now().year
+year2 = 1900
+rad = year1 - year2
+for i in range(rad+1):
+    print(year2 + i)
